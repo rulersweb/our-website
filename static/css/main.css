@@ -1,0 +1,30 @@
+a.navbar-brand img{
+    height: 50px;
+}
+
+section#home{
+    background-image: url('../img/header.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+    color: #fff;
+    height: 400px;
+}
+
+section#home a{
+    background: #28166e;
+    color: #fff;
+    border: none;
+}
+
+section#about h2 span,
+section#services h2 span{
+    border-bottom: 1px solid #28166e;
+}
+
+section#services .card .col-10{
+    transform: translate(0%, 29%);
+}
+
+section#services .card .card-body.text-dark{
+    height: 200px;
+}
