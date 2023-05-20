@@ -12,7 +12,7 @@
         <script src="static/js/main.js" type="text/javascript"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <img class="img-thubmnail" src="static/img/WebRulersLogo.png" alt="WebRulers Infotech"/>
@@ -32,6 +32,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-odoo-apps">Our Odoo Apps</a>
                         </li>
                     </ul>
                 </div>
@@ -203,28 +209,101 @@
                 </div>
             </div>
         </section>
+        <section id="testimonials" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center mb-3"><span>Testimonials</span></h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div id="testimonials-indicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <!-- <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="1"></button> -->
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card border-dark">
+                                        <div class="card-header">
+                                            <h4>José Luis Gaytán</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p>Webrulers Infotech is a highly skilled and professional developer who specializes in Odoo app development. I've worked with him for over two years, and he consistently delivers high-quality work on time. His attention to detail and expertise in his field are unmatched, and he's always willing to communicate and provide guidance. I highly recommend Webrulers to anyone in need of an Odoo app developer.</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="our-odoo-apps" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center mb-3"><span>Our Odoo Apps</span></h2>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_pos_stock_quantity_adv/" class="apps-link">
+                            <div class="card border-dark h-100 p-1">
+                                <img src="https://apps.odoocdn.com/apps/module_image?image_id=13165629"
+                                class="card-img-top" alt="Advance POS Stock Realtime Quantity">
+                                <div class="card-body">
+                                    <h5 class="card-title">Advance POS Stock Realtime Quantity</h5>
+                                    <p class="card-text">A powerful tool that allows you to easily monitor your inventory levels in real-time, directly from the Point of Sale interface, Also it track quantity updates from sales, purchase and website orders too.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_pos_swipe_delete_orderline/" class="apps-link">
+                            <div class="card border-dark h-100 p-1">
+                                <img src="https://apps.odoocdn.com/apps/module_image?image_id=13165631"
+                                class="card-img-top" alt="Odoo Swipe Delete Order Line">
+                                <div class="card-body">
+                                    <h5 class="card-title">Odoo Swipe Delete Order Line</h5>
+                                    <p class="card-text">This module allows you to easily delete pos order line from cart on swipe gesture when you are using touchscreen-enabled device.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_pos_stock_quantity/" class="apps-link">
+                            <div class="card border-dark h-100 p-1">
+                                <img src="https://apps.odoocdn.com/apps/module_image?image_id=13165630"
+                                class="card-img-top" alt="POS Stock Realtime Quantity">
+                                <div class="card-body">
+                                    <h5 class="card-title">POS Stock Realtime Quantity</h5>
+                                    <p class="card-text">A powerful tool that allows you to easily monitor your inventory levels in real-time, directly from the Point of Sale interface.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-lg-12 text-center">
+                        <a href="https://apps.odoo.com/apps/modules/browse?search=webrulers+infotech" class="btn btn-primary btn-lg mt-4">
+                            View All Apps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="bg-dark text-light py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h5>About Us</h5>
                         <p>WebRulers Infotech is a young and dynamic IT solutions provider that specializes in eCommerce website development, mobile application development, and more. Their goal is to help businesses grow rapidly and build their brand by delivering innovative and engaging tech solutions.</p>
                     </div>
-                    <div class="col-md-4">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#home" style="color: #fff;text-decoration: none;">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about" style="color: #fff;text-decoration: none;">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#services" style="color: #fff;text-decoration: none;">Our Services</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="offset-2 col-md-4">
                         <h5>Contact Us</h5>
                         <address>
                             Regus Earth Arise</br>
@@ -239,9 +318,9 @@
                 </div>
             </div>
         </footer>
-        <div style="display:block; left: auto;bottom: 25px; right: 25px;position: fixed;z-index: 9999;" dir="ltr">
-            <div style="top: auto; height: 40px; width: 40px; z-index: 10001;">
-                <div data-popup="" data-rgb="3,169,244" data-title="live:.cid.87f9eeb8eb95f625" style="height: 42px; width: 42px;">
+        <div class="contact-floated-icons" dir="ltr">
+            <div class="contact-floated-icon">
+                <div class="skype-icon" data-popup="" data-rgb="3,169,244" data-title="live:.cid.87f9eeb8eb95f625">
                     <a rel="noopener" href="skype:live:.cid.87f9eeb8eb95f625?chat">
                         <svg class="ico_d " width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(0deg);">
                             <circle class="color-element" cx="19.4395" cy="19.4395" r="19.4395" fill="#03A9F4"></circle>
@@ -250,8 +329,8 @@
                     </a>
                 </div>
             </div>
-            <div style="top: auto; height: 40px; width: 40px; z-index: 10001;">
-                <div data-popup="" data-rgb="3,169,244" data-title="rulersweb@gmail.com" style="height: 42px; width: 42px;">
+            <div class="contact-floated-icon">
+                <div class="gmail-icon" data-popup="" data-rgb="3,169,244" data-title="rulersweb@gmail.com">
                     <a rel="noopener" href="mailto:rulersweb@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="39" height="39" viewBox="0 0 48 48">

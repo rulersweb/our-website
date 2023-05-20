@@ -10,14 +10,17 @@ section#home{
     height: 400px;
 }
 
-section#home a{
+section#home a,
+section#our-odoo-apps a{
     background: #28166e;
     color: #fff;
     border: none;
 }
 
 section#about h2 span,
-section#services h2 span{
+section#services h2 span,
+section#testimonials h2 span,
+section#our-odoo-apps h2 span{
     border-bottom: 1px solid #28166e;
 }
 
@@ -27,4 +30,44 @@ section#services .card .col-10{
 
 section#services .card .card-body.text-dark{
     height: 200px;
+}
+
+div.contact-floated-icons{
+    display:block;
+    left: auto;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    z-index: 9999;
+}
+
+div.contact-floated-icons div.contact-floated-icon{
+    top: auto;
+    height: 40px;
+    width: 40px;
+    z-index: 10001;
+}
+
+div.contact-floated-icons div.contact-floated-icon div.skype-icon,
+div.contact-floated-icons div.contact-floated-icon div.gmail-icon{
+    height: 42px;
+    width: 42px;
+}
+
+#testimonials #testimonials-indicators .carousel-inner{
+    padding: 50px;
+    padding-top: 0px;
+}
+
+#testimonials #testimonials-indicators .carousel-inner .blockquote{
+    text-align: justify;
+}
+
+#our-odoo-apps .card .card-img-top{
+    height: 200px;
+}
+
+#our-odoo-apps .apps-link{
+    color: black;
+    text-decoration: none;
 }
