@@ -64,7 +64,8 @@ div.contact-floated-icons div.contact-floated-icon div.gmail-icon{
 }
 
 #our-odoo-apps .card .card-img-top{
-    height: 200px;
+    /* height: 200px; */
+    height: 170px;
 }
 
 #our-odoo-apps .apps-link{
