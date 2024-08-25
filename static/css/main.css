@@ -48,6 +48,10 @@ div.contact-floated-icons div.contact-floated-icon{
     z-index: 10001;
 }
 
+div.contact-floated-icons div.contact-floated-icon.contact-fiverr-icon{
+    margin-bottom: 10px;
+}
+
 div.contact-floated-icons div.contact-floated-icon div.skype-icon,
 div.contact-floated-icons div.contact-floated-icon div.gmail-icon{
     height: 42px;
