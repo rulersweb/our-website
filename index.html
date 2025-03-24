@@ -22,11 +22,16 @@
                 <a class="navbar-brand" href="/">
                     <img class="img-thubmnail" src="static/img/WebRulersLogo.png" alt="WebRulers Infotech"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex align-items-center">
+                    <button class="theme-toggle-mobile me-2" id="themeToggleMobile" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
@@ -44,7 +49,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#our-odoo-apps"><i class="fas fa-cubes me-1"></i> Odoo Apps</a>
                         </li>
-                        <li class="nav-item ms-3">
+                        <li class="nav-item ms-3 d-none d-lg-block">
                             <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
                                 <i class="fas fa-moon"></i> <span class="d-none d-md-inline">Dark Mode</span>
                             </button>
