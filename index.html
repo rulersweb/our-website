@@ -3,17 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebRulers Infotech</title>
-        <link rel="icon" type="image/x-icon" href="static/img/favicon.png">
+        <title>WebRulers Infotech - Modern Technology Solutions</title>
+        <meta name="description" content="WebRulers Infotech provides comprehensive IT solutions including web development, ERP solutions, and api development.">
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
         <link href="static/css/bootstrap.css" rel="stylesheet"/>
         <link href="static/css/main.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
         <script src="static/js/jquery.js" type="text/javascript"></script>
         <script src="static/js/bootstrap.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script src="static/js/main.js" type="text/javascript"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="/">
                     <img class="img-thubmnail" src="static/img/WebRulersLogo.png" alt="WebRulers Infotech"/>
                 </a>
@@ -23,69 +28,138 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
+                            <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
+                            <a class="nav-link" href="#services"><i class="fas fa-cogs me-1"></i> Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <a class="nav-link" href="#testimonials"><i class="fas fa-quote-left me-1"></i> Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-odoo-apps">Our Odoo Apps</a>
+                            <a class="nav-link" href="#our-odoo-apps"><i class="fas fa-cubes me-1"></i> Odoo Apps</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                                <i class="fas fa-moon"></i> <span class="d-none d-md-inline">Dark Mode</span>
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section id="home" class="py-5 text-center">
-            <div class="container">
-                <h1>Welcome to WebRulers Infotech</h1>
-                <p class="lead">We offers high-quality technology solutions for businesses of all sizes, from website design to software development. With our expertise and commitment to excellence, we can help your business thrive in today's digital landscape. Contact us to learn more.</p>
-                <a href="#about" class="btn btn-primary btn-lg mt-4">Find Out More</a>
-            </div>
-        </section>
-        <section id="about" class="py-3 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center mb-3"><span>About Us</span></h2>
-                        <p>WebRulers Infotech was established in 2023 with a primary focus on providing comprehensive information technology and related services. We are a dynamic and energetic team of young and highly talented IT solution providers who are committed to delivering innovative solutions that help businesses grow and build their brand.</p>
-                        <p>As a leading company in the IT industry, we specialize in various services such as eCommerce website design and development, Flask development, FastApi development, Django development, mobile application development, Enterprise Resource Planning, and Odoo development. Our team possesses the right attitude, skills, and capabilities to deliver the best solutions to our clients.</p>
-                        <p>At WebRulers Infotech, we provide agile, robust, and practical solutions that cater to our clients' unique needs. We leverage the latest tech solutions to create innovative and engaging digital experiences, ensuring that our clients receive the best possible outcomes for their online business. Our primary goal is to generate higher ROI for our clients while building long-lasting relationships with them.</p>
-                        <p>Our commitment to providing quality services is evident in our client's satisfaction, and we take pride in being a trusted partner for their businesses. We constantly strive to exceed expectations by staying up-to-date with the latest technological advancements and industry best practices.</p>
-                        <p>We invite you to partner with us and let us help you grow your business to new heights.</p>
+        <section id="home" class="d-flex align-items-center">
+            <div class="container" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-delay="200">
+                        <h1 class="hero-title">Transforming <span class="gradient-text">Ideas</span> into <span class="gradient-text">Digital Reality</span></h1>
+                        <p class="hero-lead">We craft cutting-edge technology solutions that empower businesses to thrive in today's digital landscape. From stunning websites to powerful software solutions, we're your partner in digital transformation.</p>
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary btn-lg me-3"><i class="fas fa-rocket me-2"></i>Explore Services</a>
+                            <a href="#footer" class="btn btn-outline-primary btn-lg"><i class="fas fa-paper-plane me-2"></i>Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="400">
+                        <div class="hero-image-container">
+                            <div class="hero-image-bg"></div>
+                            <img src="static/img/hero-illustration.svg" alt="Digital Transformation" class="hero-image">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="services" class="py-3">
+        <section id="about" class="py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="text-center mb-3"><span>Services We Offer</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="mb-5"><span>About Us</span></h2>
+                        <p class="lead">We are a team of passionate technologists committed to delivering innovative solutions that help businesses thrive in the digital age.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/python.png" alt="Python">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>Python</b>
-                                    </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="about-content">
+                            <h3 class="h4">Who We Are</h3>
+                            <p>At WebRulers Infotech, we combine technical expertise with a deep understanding of business needs to deliver solutions that drive growth and efficiency. Our team of skilled developers and consultants work closely with clients to understand their unique challenges and create tailored solutions.</p>
+                            <ul class="list-unstyled mt-4">
+                                <li>Expert Development Team</li>
+                                <li>Cutting-edge Technologies</li>
+                                <li>Agile Methodology</li>
+                                <li>Customer-Centric Approach</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-content">
+                            <h3 class="h4">Our Expertise</h3>
+                            <p>With years of experience in software development and implementation, we've built a reputation for delivering high-quality solutions across various technologies and platforms.</p>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li>ERP Solutions - Odoo Backend Development & Customization</li>
+                                        <li>ERP Solutions - Odoo Point of Sale Development & Customization</li>
+                                        <li>ERP Solutions - Odoo E-commerce Development & Customization</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li>Python Development - Automation Scripts</li>
+                                        <li>Flask & FastAPI - API and Website Development</li>
+                                        <li>Django Development - API and Website Development</li>
+                                        <li>Mobile Applications - Android</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="about-content">
+                            <h3 class="h4">Our Mission</h3>
+                            <p>Our mission is to empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage. We are committed to delivering excellence in every project we undertake.</p>
+                            <p>We believe in building long-term relationships with our clients, becoming trusted partners in their digital journey rather than just service providers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="about-content">
+                            <h3 class="h4">Why Choose Us</h3>
+                            <ul class="list-unstyled mt-4">
+                                <li>Proven track record of successful projects</li>
+                                <li>Transparent communication and project management</li>
+                                <li>Flexible engagement models to suit your needs</li>
+                                <li>Continuous support and maintenance</li>
+                                <li>Commitment to quality and timely delivery</li>
+                                <li>Cost-effective solutions without compromising quality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="mb-4"><span>Our Services</span></h2>
+                        <p class="lead mb-5">We offer a comprehensive suite of technology solutions to help your business succeed in the digital world.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/python.png" alt="Python">
+                                <div class="col-12">
+                                    <b>Python</b>
+                                </div>
+                            </div>
+                            <div class="card-body">
                                 <p class="card-text">
                                     Our Python development services provide customized and scalable solutions for your business needs. 
                                     Our team of expert Python developers offers application development, and automation services, 
@@ -94,20 +168,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/odoo.png" alt="Odoo ERP">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>Odoo ERP</b>
-                                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/odoo.png" alt="Odoo ERP">
+                                <div class="col-12">
+                                    <b>Odoo ERP</b>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                            <div class="card-body">
                                 <p class="card-text">
                                     We offer comprehensive Odoo Platform services that help businesses streamline 
                                     and simplify their processes. Our services include everything from ready-to-use business 
@@ -116,20 +185,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/django.png" alt="Django">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>Django</b>
-                                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/django.png" alt="Django">
+                                <div class="col-12">
+                                    <b>Django</b>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                            <div class="card-body">
                                 <p class="card-text">
                                     We provide comprehensive Django application development and customization services to 
                                     build customized and scalable web applications. We offer end-to-end Django development 
@@ -138,22 +202,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/flask.png" alt="Flask">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>Flask</b>
-                                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/flask.png" alt="Flask">
+                                <div class="col-12">
+                                    <b>Flask</b>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                            <div class="card-body">
                                 <p class="card-text">
                                     We provide Flask application development and customization services for your business. 
                                     We offer custom Flask app development, integration, testing, and maintenance services 
@@ -162,20 +219,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/fastapi.png" alt="FastAPI">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>FastAPI</b>
-                                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/fastapi.png" alt="FastAPI">
+                                <div class="col-12">
+                                    <b>FastAPI</b>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                            <div class="card-body">
                                 <p class="card-text">
                                     We provide professional FastAPI application development services to create applications 
                                     that meet your business needs. We offer custom FastAPI app development, testing, customization, 
@@ -184,20 +236,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="card border-dark mb-3">
-                            <div class="card-header text-center">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img class="rounded-circle" 
-                                            src="static/img/android.png" alt="Android APP">
-                                    </div>
-                                    <div class="col-10">
-                                        <b>Android APP</b>
-                                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="static/img/android.png" alt="Android APP">
+                                <div class="col-12">
+                                    <b>Android APP</b>
                                 </div>
                             </div>
-                            <div class="card-body text-dark">
+                            <div class="card-body">
                                 <p class="card-text">
                                     We specialize in professional Android mobile development, delivering feature-rich and 
                                     high-performance applications using the latest technologies. Our services include custom 
@@ -209,71 +256,95 @@
                 </div>
             </div>
         </section>
-        <section id="testimonials" class="py-3">
+        <section id="testimonials" class="py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="text-center mb-3"><span>Testimonials</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="mb-4"><span>Client Testimonials</span></h2>
+                        <p class="lead mb-5">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div id="testimonials-indicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                                <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="2"></button>
-                                <button type="button" data-bs-target="#testimonials-indicators" data-bs-slide-to="3"></button>
+                <div class="testimonials-wrapper">
+                    <div class="row testimonials-grid">
+                        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p>Webrulers Infotech Team have a highly skilled and professional developers who specializes in Odoo Development. They consistently delivers high-quality work on time. Their attention to detail and expertise in their field are unmatched, and they're always willing to communicate and provide guidance. I highly recommend Webrulers Infotech Team to anyone in need of an Odoo Developer.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar" data-initial="JG" data-color="#4e73df"></div>
+                                    <div class="author-info">
+                                        <h5>José Luis Gaytán</h5>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card border-dark">
-                                        <div class="card-header">
-                                            <h4>José Luis Gaytán</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <blockquote class="blockquote mb-0">
-                                                <p>Webrulers Infotech Team have a highly skilled and professional developers who specializes in Odoo Development. They consistently delivers high-quality work on time. Their attention to detail and expertise in their field are unmatched, and they're always willing to communicate and provide guidance. I highly recommend Webrulers Infotech Team to anyone in need of an Odoo Developer.</p>
-                                            </blockquote>
+                        </div>
+                        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p>I've had an excellent experience with WebRulers Infotech. They communicate quite well with understanding. They provide consultation for each procedure. Also their support is excellent. I strongly recommend them.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar" data-initial="AA" data-color="#36b9cc"></div>
+                                    <div class="author-info">
+                                        <h5>Abdulaziz Alanazi</h5>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="card border-dark">
-                                        <div class="card-header">
-                                            <h4>Abdulaziz Alanazi</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <blockquote class="blockquote mb-0">
-                                                <p>I've had an excellent experience with WebRulers Infotech. They communicate quite well with understanding. They provide consultation for each procedure. Also their support is excellent. I strongly recommend them.</p>
-                                            </blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p>Deciding to go with Odoo ERP was a good decision for a small business like ours. But finding the right partner like Webrulers Infotech is like seeing light at the end of the tunnel of our digitization journey. It is like having a developers in house. Besides the technical skills, Communication and budget are equally important for an SME. Webrulers Infotech has shown keen interest in trying to understand my problems and help come up with honest and innovative solutions to our problems in the most reasonable of budget and time of delivery. If you are a small business with very limited resources and low technical skills like ours, Webrulers Infotech will hold your hands and walk with you through this journey as a trusted friend giving you a great experience.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar" data-initial="RK" data-color="#1cc88a"></div>
+                                    <div class="author-info">
+                                        <h5>Richie K</h5>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="card border-dark">
-                                        <div class="card-header">
-                                            <h4>Richie K</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <blockquote class="blockquote mb-0">
-                                                <p>Deciding to go with Odoo ERP was a good decision for a small business like ours. But finding the right partner like Webrulers Infotech is like seeing light at the end of the tunnel of our digitization journey. It is like having a developers in house.
-
-                                                Besides the technical skills, Communication and budget are equally important for an SME. Webrulers Infotech has shown keen interest in trying to understand my problems and help come up with honest and innovative solutions to our problems in the most reasonable of budget and time of delivery.
-                                                If you are a small business with very limited resources and low technical skills like ours, Webrulers Infotech will hold your hands and walk with you through this journey as a trusted friend giving you a great experience.</p>
-                                            </blockquote>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p>I have had the pleasure of working with WebRulers Infotech on both simple and highly complex Odoo customization projects for my company. Their team consistently delivers exceptional results, whether the task is straightforward or demands intricate, detailed work. Throughout our collaboration, they have demonstrated a deep understanding of our needs, always approaching challenges with expertise and a positive attitude. WebRulers Infotech has become an invaluable partner, and I highly recommend their services to anyone in need of reliable and proficient Odoo development.</p>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="card border-dark">
-                                        <div class="card-header">
-                                            <h4>Jay Lake</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <blockquote class="blockquote mb-0">
-                                                <p>I have had the pleasure of working with WebRulers Infotech on both simple and highly complex Odoo customization projects for my company. Their team consistently delivers exceptional results, whether the task is straightforward or demands intricate, detailed work. Throughout our collaboration, they have demonstrated a deep understanding of our needs, always approaching challenges with expertise and a positive attitude. WebRulers Infotech has become an invaluable partner, and I highly recommend their services to anyone in need of reliable and proficient Odoo development.</p>
-                                            </blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar" data-initial="JL" data-color="#e74a3b"></div>
+                                    <div class="author-info">
+                                        <h5>Jay Lake</h5>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -283,90 +354,174 @@
                 </div>
             </div>
         </section>
-        <section id="our-odoo-apps" class="py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="text-center mb-3"><span>Our Odoo Apps</span></h2>
+        <section id="our-odoo-apps" class="py-5">
+            <div class="odoo-apps-bg-shape"></div>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <div class="section-title">
+                            <h2 class="mb-4"><span>Our Odoo Apps</span></h2>
+                            <div class="title-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <p class="lead mb-5">Discover our collection of powerful Odoo applications designed to enhance your business operations and streamline your workflows.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
-                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_pos_stock_quantity_adv/" class="apps-link">
-                            <div class="card border-dark h-100 p-1">
-                                <img src="static/img/wr_pos_stock_quantity_adv.png"
-                                class="card-img-top" alt="Advance POS Stock Realtime Quantity">
-                                <div class="card-body">
-                                    <h5 class="card-title">Advance POS Stock Realtime Quantity</h5>
-                                    <p class="card-text">A powerful tool that allows you to easily monitor your inventory levels in real-time, directly from the Point of Sale interface, Also it track quantity updates from sales, purchase and website orders too.</p>
+                <div class="apps-showcase">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col" data-aos="fade-up" data-aos-delay="100">
+                            <a href="https://apps.odoo.com/apps/modules/18.0/wr_global_search/" class="apps-link">
+                                <div class="app-card">
+                                    <div class="app-card-image">
+                                        <img src="static/img/wr_global_search.png" alt="Odoo Global Search | Easy Search">
+                                        <div class="app-overlay">
+                                            <div class="app-overlay-content">
+                                                <span class="view-app">View App</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-card-body">
+                                        <div class="app-badge">Backend</div>
+                                        <h5 class="app-title">Odoo Global Search | Easy Search</h5>
+                                        <p class="app-text">Global Search: Seamlessly Navigate Across Odoo Models, Configuring Criteria for Lightning-Fast Data Retrieval and   Your Shortcut to Effortless Information Discovery.</p>
+                                    </div>
+                                    <div class="app-card-footer">
+                                        <span class="app-details">View Details <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_pos_swipe_delete_orderline/" class="apps-link">
-                            <div class="card border-dark h-100 p-1">
-                                <img src="static/img/wr_pos_swipe_delete_orderline.png"
-                                class="card-img-top" alt="Odoo Swipe Delete Order Line">
-                                <div class="card-body">
-                                    <h5 class="card-title">Odoo Swipe Delete Order Line</h5>
-                                    <p class="card-text">This module allows you to easily delete pos order line from cart on swipe gesture when you are using touchscreen-enabled device.</p>
+                            </a>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-delay="100">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_stock_quantity_adv/" class="apps-link">
+                                <div class="app-card">
+                                    <div class="app-card-image">
+                                        <img src="static/img/wr_pos_stock_quantity_adv.png" alt="Advance POS Stock Realtime Quantity">
+                                        <div class="app-overlay">
+                                            <div class="app-overlay-content">
+                                                <span class="view-app">View App</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-card-body">
+                                        <div class="app-badge">POS</div>
+                                        <h5 class="app-title">Advance POS Stock Realtime Quantity</h5>
+                                        <p class="app-text">A powerful tool that allows you to easily monitor your inventory levels in real-time, directly from the Point of Sale interface, Also it track quantity updates from sales, purchase and website orders too.</p>
+                                    </div>
+                                    <div class="app-card-footer">
+                                        <span class="app-details">View Details <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_stage_step_confirmation_adv/" class="apps-link">
-                            <div class="card border-dark h-100 p-1">
-                                <img src="static/img/wr_stage_step_confirmation_adv.png"
-                                class="card-img-top" alt="Stage Step Backward/Forward Confirmation Advance">
-                                <div class="card-body">
-                                    <h5 class="card-title">Stage Step Backward/Forward Confirmation Advance</h5>
-                                    <p class="card-text">Advanced Kanban and Form View Stage Progression with Reason Capture for Odoo.</p>
+                            </a>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-delay="200">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_swipe_delete_orderline/" class="apps-link">
+                                <div class="app-card">
+                                    <div class="app-card-image">
+                                        <img src="static/img/wr_pos_swipe_delete_orderline.png" alt="Odoo Swipe Delete Order Line">
+                                        <div class="app-overlay">
+                                            <div class="app-overlay-content">
+                                                <span class="view-app">View App</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-card-body">
+                                        <div class="app-badge">POS</div>
+                                        <h5 class="app-title">Odoo Swipe Delete Order Line</h5>
+                                        <p class="app-text">Easily delete POS order lines with a simple swipe gesture on touchscreen devices.</p>
+                                    </div>
+                                    <div class="app-card-footer">
+                                        <span class="app-details">View Details <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://apps.odoo.com/apps/modules/16.0/wr_sale_item_catalog/" class="apps-link">
-                            <div class="card border-dark h-100 p-1">
-                                <img src="static/img/wr_sale_item_catalog.gif"
-                                class="card-img-top" alt="Sale Line Catalog">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sale Line Catalog</h5>
-                                    <p class="card-text">A powerful tool that simplifies the process of selecting products using a kanban view for your sales needs.</p>
+                            </a>
+                        </div>
+                        <div class="col" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://apps.odoo.com/apps/modules/16.0/wr_sale_item_catalog/" class="apps-link">
+                                <div class="app-card">
+                                    <div class="app-card-image">
+                                        <img src="static/img/wr_sale_item_catalog.gif" alt="Sale Line Catalog">
+                                        <div class="app-overlay">
+                                            <div class="app-overlay-content">
+                                                <span class="view-app">View App</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-card-body">
+                                        <div class="app-badge">Backend</div>
+                                        <h5 class="app-title">Sale Line Catalog</h5>
+                                        <p class="app-text">A powerful tool that simplifies the process of selecting products using a kanban view for your sales needs.</p>
+                                    </div>
+                                    <div class="app-card-footer">
+                                        <span class="app-details">View Details <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row p-3">
-                    <div class="col-lg-12 text-center">
-                        <a href="https://apps.odoo.com/apps/modules/browse?search=webrulers+infotech"
-                            class="btn btn-primary btn-lg mt-4" target="_blank">
-                            View All Apps
-                        </a>
+                <div class="apps-cta" data-aos="fade-up">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <div class="cta-content">
+                                <h3>Explore Our Complete Collection</h3>
+                                <p>Discover more powerful Odoo applications designed to enhance your business operations</p>
+                                <a href="https://apps.odoo.com/apps/modules/browse?search=webrulers+infotech" class="btn btn-primary btn-lg mt-4" target="_blank">
+                                    <i class="fas fa-cubes me-2"></i> View All Odoo Apps
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="bg-dark text-light py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>About Us</h5>
-                        <p>WebRulers Infotech is a young and dynamic IT solutions provider that specializes in eCommerce website development, mobile application development, and more. Their goal is to help businesses grow rapidly and build their brand by delivering innovative and engaging tech solutions.</p>
+        <footer class="bg-dark text-light" id="footer">
+            <div class="container py-5">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-6">
+                        <h5>About WebRulers Infotech</h5>
+                        <p>WebRulers Infotech is a young and dynamic IT solutions provider specializing in eCommerce website development, mobile applications, and innovative tech solutions. We help businesses grow rapidly and build their brand through cutting-edge digital experiences.</p>
+                        <div class="social-links mt-4">
+                            <a href="https://in.linkedin.com/company/webrulers-infotech-llp" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    <div class="offset-2 col-md-4">
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                            <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
+                            <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                            <li><a href="#our-odoo-apps"><i class="fas fa-chevron-right me-2"></i>Odoo Apps</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
                         <h5>Contact Us</h5>
                         <address>
-                            E-801, Titanium City Center</br>
-                            100 Feet Road, Nr. Aykar Bhavan</br>
-                            Satellite, Ahmedabad - 380015</br>
-                            India.</br>
-                            <br> Skype: <a href="skype:live:.cid.87f9eeb8eb95f625?chat" style="color: unset;">live:.cid.87f9eeb8eb95f625</a>
-                            <br> Email: <a href="mailto:rulersweb@gmail.com" style="color: unset;">rulersweb@gmail.com</a>
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                                <span>E-801, Titanium City Center<br>
+                                100 Feet Road, Nr. Aykar Bhavan<br>
+                                Satellite, Ahmedabad - 380015<br>
+                                India</span>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-envelope me-3 mt-1"></i>
+                                <a href="mailto:rulersweb@gmail.com">rulersweb@gmail.com</a>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fab fa-skype me-3 mt-1"></i>
+                                <a href="skype:live:.cid.87f9eeb8eb95f625?chat">live:.cid.87f9eeb8eb95f625</a>
+                            </div>
                         </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="mb-0">&copy; 2025 WebRulers Infotech. All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -402,5 +557,3 @@
         </div>
     </body>
 </html>
-
-
