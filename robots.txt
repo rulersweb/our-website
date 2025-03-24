@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /static/css/
+Allow: /static/js/
+Allow: /static/img/
+
+# Disallow any temporary files
+Disallow: /tmp/
+Disallow: /*.tmp$
+
+# Sitemap location
+Sitemap: https://www.webrulersinfotech.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10
