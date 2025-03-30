@@ -1417,61 +1417,50 @@ footer a:hover {
 
 /* Fiverr icon */
 .contact-fiverr-icon {
-    box-shadow: 0 8px 25px rgba(0, 178, 45, 0.15), 0 0 0 1px rgba(0, 178, 45, 0.1);
+    box-shadow: 0 8px 25px rgba(29, 191, 115, 0.15), 0 0 0 1px rgba(29, 191, 115, 0.1);
 }
 
 .contact-fiverr-icon:hover {
-    box-shadow: 0 15px 30px rgba(0, 178, 45, 0.25), 0 0 0 2px rgba(0, 178, 45, 0.2);
+    box-shadow: 0 15px 30px rgba(29, 191, 115, 0.25), 0 0 0 2px rgba(29, 191, 115, 0.2);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(240, 255, 240, 0.95));
 }
 
-.contact-fiverr-icon:hover svg .a {
-    fill: #00b22d;
-}
-
 .contact-fiverr-icon::before {
-    background: linear-gradient(135deg, #00b22d, #00d935);
+    background: linear-gradient(135deg, #1dbf73, #00d935);
 }
 
-/* Skype icon */
-.skype-icon svg .color-element {
+.fiverr-icon i {
+    color: #1dbf73;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
-.contact-floated-icon:nth-child(2) {
-    box-shadow: 0 8px 25px rgba(0, 120, 215, 0.15), 0 0 0 1px rgba(0, 120, 215, 0.1);
-}
-
-.contact-floated-icon:nth-child(2):hover {
-    box-shadow: 0 15px 30px rgba(0, 120, 215, 0.25), 0 0 0 2px rgba(0, 120, 215, 0.2);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(240, 248, 255, 0.95));
-}
-
-.contact-floated-icon:nth-child(2)::before {
-    background: linear-gradient(135deg, #0078d7, #00aeff);
-}
-
-.skype-icon:hover svg .color-element {
-    fill: #0078d7;
+.contact-fiverr-icon:hover i {
+    color: #ffffff;
 }
 
 /* Gmail icon */
-.contact-floated-icon:nth-child(3) {
+.contact-gmail-icon {
     box-shadow: 0 8px 25px rgba(234, 67, 53, 0.15), 0 0 0 1px rgba(234, 67, 53, 0.1);
 }
 
-.contact-floated-icon:nth-child(3):hover {
+.contact-gmail-icon:hover {
     box-shadow: 0 15px 30px rgba(234, 67, 53, 0.25), 0 0 0 2px rgba(234, 67, 53, 0.2);
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 240, 240, 0.95));
 }
 
-.contact-floated-icon:nth-child(3)::before {
+.contact-gmail-icon::before {
     background: linear-gradient(135deg, #ea4335, #ff7262);
 }
 
-.gmail-icon:hover svg path[fill="#e84f4b"],
-.gmail-icon:hover svg path[fill="#ca3737"] {
-    fill: #ea4335;
+.gmail-icon i {
+    color: #ea4335;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-gmail-icon:hover i {
+    color: #ffffff;
 }
 
 @keyframes pulse {
