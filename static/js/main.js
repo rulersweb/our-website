@@ -65,13 +65,22 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        loopAdditionalSlides: 3,
+        loopAdditionalSlides: 5,
         centeredSlides: false,
         speed: 500,
+        allowTouchMove: true,
+        watchSlidesProgress: true,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
         autoplay: {
             delay: 5000,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
             pauseOnMouseEnter: true,
+        },
+        navigation: {
+            nextEl: '.testimonials-navigation-container .swiper-button-next',
+            prevEl: '.testimonials-navigation-container .swiper-button-prev',
         },
         pagination: {
             el: '.testimonials-pagination-container .swiper-pagination',
@@ -79,10 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
             renderBullet: function (index, className) {
                 return '<span class="' + className + '"></span>';
             },
-        },
-        navigation: {
-            nextEl: '.testimonials-navigation-container .swiper-button-next',
-            prevEl: '.testimonials-navigation-container .swiper-button-prev',
         },
         breakpoints: {
             640: {

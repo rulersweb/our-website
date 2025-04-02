@@ -756,7 +756,7 @@ section#services .card .card-text {
     height: 100%;
     top: 0;
     left: 0;
-    pointer-events: none; /* Allow clicks to pass through to the slider */
+    z-index: 10;
 }
 
 /* Navigation buttons styling */
@@ -773,7 +773,9 @@ section#services .card .card-text {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 0;
-    pointer-events: auto; /* Re-enable clicks on the buttons */
+    pointer-events: auto;
+    z-index: 20;
+    cursor: pointer;
 }
 
 .testimonials-navigation-container .swiper-button-prev {
@@ -796,44 +798,8 @@ section#services .card .card-text {
     font-weight: bold;
 }
 
-/* Pagination bullets styling */
-.testimonials-pagination-container {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-}
-
-.testimonials-pagination-container .swiper-pagination {
-    position: relative;
-    bottom: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.testimonials-pagination-container .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: var(--text-color);
-    opacity: 0.3;
-    transition: all 0.3s ease;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.testimonials-pagination-container .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: var(--primary-color);
-    width: 25px;
-    border-radius: 5px;
-}
-
-/* Add some space between cards and pagination */
+/* Add some space for testimonial cards */
 .testimonials-slider .swiper-wrapper {
-    margin-bottom: 30px;
     padding: 5px 0;
 }
 
