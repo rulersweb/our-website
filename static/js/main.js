@@ -35,6 +35,78 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true
     });
 
+    function equalizeTestimonialHeights() {
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        let maxHeight = 0;
+
+        testimonialCards.forEach(card => {
+            card.style.height = 'auto';
+            const content = card.querySelector('.testimonial-content');
+            if (content) {
+                content.style.height = 'auto';
+            }
+        });
+
+        testimonialCards.forEach(card => {
+            const height = card.offsetHeight;
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        if (maxHeight > 0) {
+            testimonialCards.forEach(card => {
+                card.style.height = `${maxHeight}px`;
+            });
+        }
+    }
+
+    const testimonialsSlider = new Swiper('.testimonials-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        loopAdditionalSlides: 3,
+        centeredSlides: false,
+        speed: 500,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+        },
+        pagination: {
+            el: '.testimonials-pagination-container .swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+            },
+        },
+        navigation: {
+            nextEl: '.testimonials-navigation-container .swiper-button-next',
+            prevEl: '.testimonials-navigation-container .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+        on: {
+            init: function() {
+                setTimeout(equalizeTestimonialHeights, 100);
+            },
+            resize: equalizeTestimonialHeights,
+            slideChangeTransitionEnd: equalizeTestimonialHeights
+        }
+    });
+
     const savedTheme = localStorage.getItem('theme') || 'light';
     if (savedTheme === 'dark') {
         document.body.classList.remove('light-theme');
