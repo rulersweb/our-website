@@ -2084,6 +2084,44 @@ footer a:hover {
 }
 
 /* Responsive Design */
+@media (max-width: 991.98px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    /* Fix testimonial header layout on mobile */
+    .testimonial-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 15px;
+    }
+    
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .author-avatar {
+        margin: 0 auto;
+    }
+    
+    .rating {
+        margin-top: 5px;
+    }
+}
+
 @media (max-width: 768px) {
     section#home h1 {
         font-size: 2.5rem;
