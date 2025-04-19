@@ -16,6 +16,7 @@
         <script src="static/js/bootstrap.js" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="static/js/main.js" type="text/javascript"></script>
     </head>
     <body>
@@ -61,9 +62,13 @@
             </div>
         </nav>
         <section id="home" class="d-flex align-items-center">
+            <div class="hero-particles-container">
+                <div id="hero-particles"></div>
+            </div>
             <div class="container" data-aos="fade-up">
                 <div class="row align-items-center">
                     <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-delay="200">
+                        <div class="hero-badge">Innovative Technology Solutions</div>
                         <h1 class="hero-title">Transforming <span class="gradient-text">Ideas</span> into <span class="gradient-text">Digital Reality</span></h1>
                         <p class="hero-lead">We craft cutting-edge technology solutions that empower businesses to thrive in today's digital landscape. From stunning websites to powerful software solutions, we're your partner in digital transformation.</p>
                         <div class="hero-cta">
@@ -74,6 +79,12 @@
                     <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="400">
                         <div class="hero-image-container">
                             <div class="hero-image-bg"></div>
+                            <div class="hero-floating-elements">
+                                <div class="floating-element fe-1"><i class="fab fa-python"></i></div>
+                                <div class="floating-element fe-2"><i class="fas fa-code"></i></div>
+                                <div class="floating-element fe-3"><i class="fas fa-mobile-alt"></i></div>
+                                <div class="floating-element fe-4"><i class="fas fa-database"></i></div>
+                            </div>
                             <img src="static/img/hero-illustration.svg" alt="Digital Transformation" class="hero-image">
                         </div>
                     </div>
@@ -81,83 +92,107 @@
             </div>
         </section>
         <section id="about" class="py-5">
-            <div class="container">
+            <div class="about-bg-shape"></div>
+            <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <div class="section-badge">Who We Are</div>
                         <h2 class="mb-5"><span>About Us</span></h2>
                         <p class="lead">We are a team of passionate technologists committed to delivering innovative solutions that help businesses thrive in the digital age.</p>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5 gx-5">
                     <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="about-content">
-                            <h3 class="h4">Who We Are</h3>
-                            <p>At Webrulers Infotech, we combine technical expertise with a deep understanding of business needs to deliver solutions that drive growth and efficiency. Our team of skilled developers and consultants work closely with clients to understand their unique challenges and create tailored solutions.</p>
-                            <ul class="list-unstyled mt-4">
-                                <li>Expert Development Team</li>
-                                <li>Cutting-edge Technologies</li>
-                                <li>Agile Methodology</li>
-                                <li>Customer-Centric Approach</li>
-                            </ul>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="about-card-content">
+                                <h3 class="h4">Who We Are</h3>
+                                <p>At Webrulers Infotech, we combine technical expertise with a deep understanding of business needs to deliver solutions that drive growth and efficiency. Our team of skilled developers and consultants work closely with clients to understand their unique challenges and create tailored solutions.</p>
+                                <ul class="feature-list mt-4">
+                                    <li><i class="fas fa-check-circle"></i> Expert Development Team</li>
+                                    <li><i class="fas fa-check-circle"></i> Cutting-edge Technologies</li>
+                                    <li><i class="fas fa-check-circle"></i> Agile Methodology</li>
+                                    <li><i class="fas fa-check-circle"></i> Customer-Centric Approach</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="about-content">
-                            <h3 class="h4">Our Expertise</h3>
-                            <p>With years of experience in software development and implementation, we've built a reputation for delivering high-quality solutions across various technologies and platforms.</p>
-                            <div class="row mt-4">
-                                <div class="col-6">
-                                    <ul class="list-unstyled">
-                                        <li>ERP Solutions - Odoo Backend Development & Customization</li>
-                                        <li>ERP Solutions - Odoo Point of Sale Development & Customization</li>
-                                        <li>ERP Solutions - Odoo E-commerce Development & Customization</li>
-                                    </ul>
-                                </div>
-                                <div class="col-6">
-                                    <ul class="list-unstyled">
-                                        <li>Python Development - Automation Scripts</li>
-                                        <li>Flask & FastAPI - API and Website Development</li>
-                                        <li>Django Development - API and Website Development</li>
-                                        <li>Mobile Applications - Android</li>
-                                    </ul>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="about-card-content">
+                                <h3 class="h4">Our Expertise</h3>
+                                <p>With years of experience in software development and implementation, we've built a reputation for delivering high-quality solutions across various technologies and platforms.</p>
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <ul class="expertise-list">
+                                            <li><i class="fas fa-caret-right"></i> ERP Solutions - Odoo Backend Development & Customization</li>
+                                            <li><i class="fas fa-caret-right"></i> ERP Solutions - Odoo Point of Sale Development & Customization</li>
+                                            <li><i class="fas fa-caret-right"></i> ERP Solutions - Odoo E-commerce Development & Customization</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="expertise-list">
+                                            <li><i class="fas fa-caret-right"></i> Python Development - Automation Scripts</li>
+                                            <li><i class="fas fa-caret-right"></i> Flask & FastAPI - API and Website Development</li>
+                                            <li><i class="fas fa-caret-right"></i> Django Development - API and Website Development</li>
+                                            <li><i class="fas fa-caret-right"></i> Mobile Applications - Android</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-4 gx-5">
                     <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="about-content">
-                            <h3 class="h4">Our Mission</h3>
-                            <p>Our mission is to empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage. We are committed to delivering excellence in every project we undertake.</p>
-                            <p>We believe in building long-term relationships with our clients, becoming trusted partners in their digital journey rather than just service providers.</p>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="about-card-content">
+                                <h3 class="h4">Our Mission</h3>
+                                <p>Our mission is to empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage. We are committed to delivering excellence in every project we undertake.</p>
+                                <p>We believe in building long-term relationships with our clients, becoming trusted partners in their digital journey rather than just service providers.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="about-content">
-                            <h3 class="h4">Why Choose Us</h3>
-                            <ul class="list-unstyled mt-4">
-                                <li>Proven track record of successful projects</li>
-                                <li>Transparent communication and project management</li>
-                                <li>Flexible engagement models to suit your needs</li>
-                                <li>Continuous support and maintenance</li>
-                                <li>Commitment to quality and timely delivery</li>
-                                <li>Cost-effective solutions without compromising quality</li>
-                            </ul>
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="about-card-content">
+                                <h3 class="h4">Why Choose Us</h3>
+                                <ul class="feature-list mt-4">
+                                    <li><i class="fas fa-check-circle"></i> Proven track record of successful projects</li>
+                                    <li><i class="fas fa-check-circle"></i> Transparent communication and project management</li>
+                                    <li><i class="fas fa-check-circle"></i> Flexible engagement models to suit your needs</li>
+                                    <li><i class="fas fa-check-circle"></i> Continuous support and maintenance</li>
+                                    <li><i class="fas fa-check-circle"></i> Commitment to quality and timely delivery</li>
+                                    <li><i class="fas fa-check-circle"></i> Cost-effective solutions without compromising quality</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="services" class="py-5">
-            <div class="container">
+            <div class="services-bg-shape"></div>
+            <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <div class="section-badge">What We Offer</div>
                         <h2 class="mb-4"><span>Our Services</span></h2>
                         <p class="lead mb-5">We offer a comprehensive suite of technology solutions to help your business succeed in the digital world.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <div class="card-header">
@@ -264,14 +299,21 @@
             </div>
         </section>
         <section id="testimonials" class="py-5">
-            <div class="container">
+            <div class="testimonial-bg-shape"></div>
+            <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <div class="section-badge">Client Feedback</div>
                         <h2 class="mb-4"><span>Client Testimonials</span></h2>
                         <p class="lead mb-5">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
                     </div>
                 </div>
                 <div class="testimonials-wrapper" data-aos="fade-up">
+                    <div class="testimonials-decoration">
+                        <div class="decoration-element de-1"><i class="fas fa-star"></i></div>
+                        <div class="decoration-element de-2"><i class="fas fa-heart"></i></div>
+                        <div class="decoration-element de-3"><i class="fas fa-thumbs-up"></i></div>
+                    </div>
                     <div class="testimonials-navigation-container">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
@@ -280,11 +322,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                        <p>Webrulers Infotech Team have a highly skilled and professional developers who specializes in Odoo Development. They consistently delivers high-quality work on time. Their attention to detail and expertise in their field are unmatched, and they're always willing to communicate and provide guidance. I highly recommend Webrulers Infotech Team to anyone in need of an Odoo Developer.</p>
-                                    </div>
-                                    <div class="testimonial-author">
+                                    <div class="testimonial-header">
                                         <div class="author-avatar" data-initial="JG" data-color="#4e73df"></div>
                                         <div class="author-info">
                                             <h5>José Luis Gaytán</h5>
@@ -297,15 +335,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="testimonial-content">
+                                        <p>Webrulers Infotech Team have a highly skilled and professional developers who specializes in Odoo Development. They consistently delivers high-quality work on time. Their attention to detail and expertise in their field are unmatched, and they're always willing to communicate and provide guidance. I highly recommend Webrulers Infotech Team to anyone in need of an Odoo Developer.</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="service-tag">Odoo ERP Customization</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                        <p>I've had an excellent experience with Webrulers Infotech. They communicate quite well with understanding. They provide consultation for each procedure. Also their support is excellent. I strongly recommend them.</p>
-                                    </div>
-                                    <div class="testimonial-author">
+                                    <div class="testimonial-header">
                                         <div class="author-avatar" data-initial="AA" data-color="#36b9cc"></div>
                                         <div class="author-info">
                                             <h5>Abdulaziz Alanazi</h5>
@@ -318,15 +358,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="testimonial-content">
+                                        <p>I've had an excellent experience with Webrulers Infotech. They communicate quite well with understanding. They provide consultation for each procedure. Also their support is excellent. I strongly recommend them.</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="service-tag">Odoo ERP Customization</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                        <p>Deciding to go with Odoo ERP was a good decision for a small business like ours. But finding the right partner like Webrulers Infotech is like seeing light at the end of the tunnel of our digitization journey. It is like having a developers in house. Besides the technical skills, Communication and budget are equally important for an SME. Webrulers Infotech has shown keen interest in trying to understand my problems and help come up with honest and innovative solutions to our problems in the most reasonable of budget and time of delivery.</p>
-                                    </div>
-                                    <div class="testimonial-author">
+                                    <div class="testimonial-header">
                                         <div class="author-avatar" data-initial="RK" data-color="#1cc88a"></div>
                                         <div class="author-info">
                                             <h5>Richie K</h5>
@@ -339,15 +381,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="testimonial-content">
+                                        <p>Deciding to go with Odoo ERP was a good decision for a small business like ours. But finding the right partner like Webrulers Infotech is like seeing light at the end of the tunnel of our digitization journey. It is like having a developers in house. Besides the technical skills, Communication and budget are equally important for an SME. Webrulers Infotech has shown keen interest in trying to understand my problems and help come up with honest and innovative solutions to our problems in the most reasonable of budget and time of delivery.</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="service-tag">Odoo ERP Implementation</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                        <p>I have had the pleasure of working with Webrulers Infotech on both simple and highly complex Odoo customization projects for my company. Their team consistently delivers exceptional results, whether the task is straightforward or demands intricate, detailed work. Throughout our collaboration, they have demonstrated a deep understanding of our needs, always approaching challenges with expertise and a positive attitude.</p>
-                                    </div>
-                                    <div class="testimonial-author">
+                                    <div class="testimonial-header">
                                         <div class="author-avatar" data-initial="JL" data-color="#e74a3b"></div>
                                         <div class="author-info">
                                             <h5>Jay Lake</h5>
@@ -360,15 +404,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="testimonial-content">
+                                        <p>I have had the pleasure of working with Webrulers Infotech on both simple and highly complex Odoo customization projects for my company. Their team consistently delivers exceptional results, whether the task is straightforward or demands intricate, detailed work. Throughout our collaboration, they have demonstrated a deep understanding of our needs, always approaching challenges with expertise and a positive attitude.</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="service-tag">Odoo ERP Customization</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card">
-                                    <div class="testimonial-content">
-                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                        <p>Working with Webrulers Infotech has been a great experience. As the founder of a recruitment company for hospitals across Brazil, I've relied on their team for several Odoo developments. They've consistently delivered solid results with professionalism and attention to detail.</p>
-                                    </div>
-                                    <div class="testimonial-author">
+                                    <div class="testimonial-header">
                                         <div class="author-avatar" data-initial="DF" data-color="#f6c23e"></div>
                                         <div class="author-info">
                                             <h5>Diego Ferrari</h5>
@@ -380,6 +426,12 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>Working with Webrulers Infotech has been a great experience. As the founder of a recruitment company for hospitals across Brazil, I've relied on their team for several Odoo developments. They've consistently delivered solid results with professionalism and attention to detail.</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="service-tag">Odoo ERP Customization</div>
                                     </div>
                                 </div>
                             </div>
