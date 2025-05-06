@@ -5,6 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Webrulers Infotech - Modern Technology Solutions</title>
         <meta name="description" content="Webrulers Infotech provides comprehensive IT solutions including web development, ERP solutions, and api development.">
+        <meta property="og:title" content="Webrulers Infotech - Modern Technology Solutions">
+        <meta property="og:description" content="Webrulers Infotech provides comprehensive IT solutions including web development, ERP solutions, and api development.">
+        <meta property="og:image" content="static/img/WebRulersLogo.png">
+        <meta property="og:url" content="https://www.webrulersinfotech.com/">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Webrulers Infotech - Modern Technology Solutions">
+        <meta name="twitter:description" content="Webrulers Infotech provides comprehensive IT solutions including web development, ERP solutions, and api development.">
+        <meta name="twitter:image" content="static/img/WebRulersLogo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
         <link rel="icon" type="image/x-icon" href="static/img/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
         <link href="static/css/bootstrap.css" rel="stylesheet"/>
@@ -18,16 +31,35 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="static/js/main.js" type="text/javascript"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Webrulers Infotech",
+            "url": "https://www.webrulersinfotech.com/",
+            "logo": "static/img/WebRulersLogo.png",
+            "description": "Webrulers Infotech provides comprehensive IT solutions including web development, ERP solutions, and api development.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "India"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "info@webrulersinfotech.com"
+            }
+        }
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img class="img-thubmnail" src="static/img/WebRulersLogo.png" alt="Webrulers Infotech"/>
+                <a class="navbar-brand" href="/" title="Webrulers Infotech - Home">
+                    <img src="static/img/WebRulersLogo.png" alt="Webrulers Infotech"/>
                 </a>
                 <div class="d-flex align-items-center">
-                    <button class="theme-toggle-mobile me-2" id="themeToggleMobile" onclick="toggleTheme()">
-                        <i class="fas fa-moon"></i>
+                    <button class="theme-toggle-mobile me-2" id="themeToggleMobile" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
                     </button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                         data-bs-target="#navbarNav" aria-controls="navbarNav" 
@@ -38,23 +70,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Home</a>
+                            <a class="nav-link" href="#home" title="Go to Home section"><i class="fas fa-home me-1"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> About Us</a>
+                            <a class="nav-link" href="#about" title="Learn about Webrulers Infotech"><i class="fas fa-info-circle me-1"></i> About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services"><i class="fas fa-cogs me-1"></i> Services</a>
+                            <a class="nav-link" href="#services" title="Explore our services"><i class="fas fa-cogs me-1"></i> Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials"><i class="fas fa-quote-left me-1"></i> Testimonials</a>
+                            <a class="nav-link" href="#testimonials" title="Read what our clients say"><i class="fas fa-quote-left me-1"></i> Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-odoo-apps"><i class="fas fa-cubes me-1"></i> Odoo Apps</a>
+                            <a class="nav-link" href="#our-odoo-apps" title="View our Odoo applications"><i class="fas fa-cubes me-1"></i> Odoo Apps</a>
                         </li>
                         <li class="nav-item ms-3 d-none d-lg-block">
-                            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
-                                <i class="fas fa-moon"></i> <span class="d-none d-md-inline">Dark Mode</span>
+                            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i> <span class="d-none d-md-inline">Dark Mode</span>
                             </button>
                         </li>
                     </ul>
@@ -72,8 +104,8 @@
                         <h1 class="hero-title">Transforming <span class="gradient-text">Ideas</span> into <span class="gradient-text">Digital Reality</span></h1>
                         <p class="hero-lead">We craft cutting-edge technology solutions that empower businesses to thrive in today's digital landscape. From stunning websites to powerful software solutions, we're your partner in digital transformation.</p>
                         <div class="hero-cta">
-                            <a href="#services" class="btn btn-primary btn-lg me-3"><i class="fas fa-rocket me-2"></i>Explore Services</a>
-                            <a href="#footer" class="btn btn-outline-primary btn-lg"><i class="fas fa-paper-plane me-2"></i>Get in Touch</a>
+                            <a href="#services" class="btn btn-primary btn-lg me-3" title="View our services"><i class="fas fa-rocket me-2"></i>Explore Services</a>
+                            <a href="#footer" class="btn btn-outline-primary btn-lg" title="Contact Webrulers Infotech"><i class="fas fa-paper-plane me-2"></i>Get in Touch</a>
                         </div>
                     </div>
                     <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="400">
@@ -85,7 +117,7 @@
                                 <div class="floating-element fe-3"><i class="fas fa-mobile-alt"></i></div>
                                 <div class="floating-element fe-4"><i class="fas fa-database"></i></div>
                             </div>
-                            <img src="static/img/hero-illustration.svg" alt="Digital Transformation" class="hero-image">
+                            <img loading="lazy" src="static/img/hero-illustration.svg" alt="Digital Transformation" class="hero-image">
                         </div>
                     </div>
                 </div>
@@ -196,7 +228,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/python.png" alt="Python">
+                                <img loading="lazy" src="static/img/python.png" alt="Python">
                                 <div class="col-12">
                                     <b>Python</b>
                                 </div>
@@ -213,7 +245,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/odoo.png" alt="Odoo ERP">
+                                <img loading="lazy" src="static/img/odoo.png" alt="Odoo ERP">
                                 <div class="col-12">
                                     <b>Odoo ERP</b>
                                 </div>
@@ -230,7 +262,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/django.png" alt="Django">
+                                <img loading="lazy" src="static/img/django.png" alt="Django">
                                 <div class="col-12">
                                     <b>Django</b>
                                 </div>
@@ -247,7 +279,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/flask.png" alt="Flask">
+                                <img loading="lazy" src="static/img/flask.png" alt="Flask">
                                 <div class="col-12">
                                     <b>Flask</b>
                                 </div>
@@ -264,7 +296,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/fastapi.png" alt="FastAPI">
+                                <img loading="lazy" src="static/img/fastapi.png" alt="FastAPI">
                                 <div class="col-12">
                                     <b>FastAPI</b>
                                 </div>
@@ -281,7 +313,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <div class="card-header">
-                                <img src="static/img/android.png" alt="Android APP">
+                                <img loading="lazy" src="static/img/android.png" alt="Android APP">
                                 <div class="col-12">
                                     <b>Android APP</b>
                                 </div>
@@ -480,10 +512,10 @@
                 <div class="apps-showcase">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                         <div class="col" data-aos="fade-up" data-aos-delay="100">
-                            <a href="https://apps.odoo.com/apps/modules/18.0/wr_global_search/" class="apps-link">
+                            <a href="https://apps.odoo.com/apps/modules/18.0/wr_global_search/" class="apps-link" title="Odoo Global Search | Easy Search">
                                 <div class="app-card">
                                     <div class="app-card-image">
-                                        <img src="static/img/wr_global_search.png" alt="Odoo Global Search | Easy Search">
+                                        <img loading="lazy" src="static/img/wr_global_search.png" alt="Odoo Global Search | Easy Search">
                                         <div class="app-overlay">
                                             <div class="app-overlay-content">
                                                 <span class="view-app">View App</span>
@@ -502,10 +534,10 @@
                             </a>
                         </div>
                         <div class="col" data-aos="fade-up" data-aos-delay="100">
-                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_stock_quantity_adv/" class="apps-link">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_stock_quantity_adv/" class="apps-link" title="Advance POS Stock Realtime Quantity">
                                 <div class="app-card">
                                     <div class="app-card-image">
-                                        <img src="static/img/wr_pos_stock_quantity_adv.png" alt="Advance POS Stock Realtime Quantity">
+                                        <img loading="lazy" src="static/img/wr_pos_stock_quantity_adv.png" alt="Advance POS Stock Realtime Quantity">
                                         <div class="app-overlay">
                                             <div class="app-overlay-content">
                                                 <span class="view-app">View App</span>
@@ -524,10 +556,10 @@
                             </a>
                         </div>
                         <div class="col" data-aos="fade-up" data-aos-delay="200">
-                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_swipe_delete_orderline/" class="apps-link">
+                            <a href="https://apps.odoo.com/apps/modules/17.0/wr_pos_swipe_delete_orderline/" class="apps-link" title="Odoo Swipe Delete Order Line">
                                 <div class="app-card">
                                     <div class="app-card-image">
-                                        <img src="static/img/wr_pos_swipe_delete_orderline.png" alt="Odoo Swipe Delete Order Line">
+                                        <img loading="lazy" src="static/img/wr_pos_swipe_delete_orderline.png" alt="Odoo Swipe Delete Order Line">
                                         <div class="app-overlay">
                                             <div class="app-overlay-content">
                                                 <span class="view-app">View App</span>
@@ -546,10 +578,10 @@
                             </a>
                         </div>
                         <div class="col" data-aos="fade-up" data-aos-delay="400">
-                            <a href="https://apps.odoo.com/apps/modules/16.0/wr_sale_item_catalog/" class="apps-link">
+                            <a href="https://apps.odoo.com/apps/modules/16.0/wr_sale_item_catalog/" class="apps-link" title="Sale Line Catalog">
                                 <div class="app-card">
                                     <div class="app-card-image">
-                                        <img src="static/img/wr_sale_item_catalog.gif" alt="Sale Line Catalog">
+                                        <img loading="lazy" src="static/img/wr_sale_item_catalog.gif" alt="Sale Line Catalog">
                                         <div class="app-overlay">
                                             <div class="app-overlay-content">
                                                 <span class="view-app">View App</span>
@@ -575,7 +607,7 @@
                             <div class="cta-content">
                                 <h3>Explore Our Complete Collection</h3>
                                 <p>Discover more powerful Odoo applications designed to enhance your business operations</p>
-                                <a href="https://apps.odoo.com/apps/modules/browse?search=Webrulers+infotech" class="btn btn-primary btn-lg mt-4" target="_blank">
+                                <a href="https://apps.odoo.com/apps/modules/browse?search=Webrulers+infotech" class="btn btn-primary btn-lg mt-4" target="_blank" title="Browse all our Odoo applications">
                                     <i class="fas fa-cubes me-2"></i> View All Odoo Apps
                                 </a>
                             </div>
@@ -591,10 +623,13 @@
                         <h5>About Webrulers Infotech</h5>
                         <p>Webrulers Infotech is a young and dynamic IT solutions provider specializing in eCommerce website development, mobile applications, and innovative tech solutions. We help businesses grow rapidly and build their brand through cutting-edge digital experiences.</p>
                         <div class="social-links mt-4">
-                            <a href="https://in.linkedin.com/company/webrulers-infotech-llp" class="social-icon" target="_blank">
+                            <a href="https://in.linkedin.com/company/webrulers-infotech-llp" class="social-icon" target="_blank" title="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="mailto:info@webrulersinfotech.com" class="social-icon" target="_blank">
+                            <a href="https://www.fiverr.com/webrulersinfotech" class="social-icon" target="_blank" title="Fiverr">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" width="25" height="25"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg>
+                            </a>
+                            <a href="mailto:info@webrulersinfotech.com" class="social-icon" target="_blank" title="Email Us">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
@@ -602,10 +637,10 @@
                     <div class="col-lg-3 col-md-6">
                         <h5>Quick Links</h5>
                         <ul class="footer-links">
-                            <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
-                            <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
-                            <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
-                            <li><a href="#our-odoo-apps"><i class="fas fa-chevron-right me-2"></i>Odoo Apps</a></li>
+                            <li><a href="#home" title="Go to Home section"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                            <li><a href="#about" title="Learn about Webrulers Infotech"><i class="fas fa-chevron-right me-2"></i>About Us</a></li>
+                            <li><a href="#services" title="Explore our services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                            <li><a href="#our-odoo-apps" title="View our Odoo applications"><i class="fas fa-chevron-right me-2"></i>Odoo Apps</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -639,18 +674,21 @@
         <div class="contact-floated-icons" dir="ltr">
             <div class="contact-floated-icon contact-fiverr-icon">
                 <div class="fiverr-icon" data-popup="" data-rgb="29,191,115" data-title="https://www.fiverr.com/webrulers?public_mode=true">
-                    <a rel="noopener" href="https://www.fiverr.com/webrulers?public_mode=true" target="_blank">
+                    <a rel="noopener" href="https://www.fiverr.com/webrulers?public_mode=true" target="_blank" title="Visit our Fiverr profile">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg>
                     </a>
                 </div>
             </div>
             <div class="contact-floated-icon contact-gmail-icon">
                 <div class="gmail-icon" data-popup="" data-rgb="234,67,53" data-title="info@webrulersinfotech.com">
-                    <a rel="noopener" href="mailto:info@webrulersinfotech.com">
+                    <a rel="noopener" href="mailto:info@webrulersinfotech.com" title="Email us at info@webrulersinfotech.com">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
         </div>
+        <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to Top">
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
     </body>
 </html>
