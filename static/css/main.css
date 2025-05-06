@@ -967,11 +967,27 @@ section#services .card img {
     width: 70px;
     height: 70px;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     margin-bottom: 1rem;
     border-radius: 15px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Light theme logo adjustments */
+body.light-theme section#services .card img {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/* Dark mode logo adjustments */
+body:not(.light-theme) section#services .card img {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section#services .card:hover img {
